@@ -18,14 +18,10 @@ mkdir data
 Now, to run, just 
 
 ```bash
-docker run -it -p 8888:8888/tcp -v ./data:~/data espressomd /bin/bash
+docker run -it -p 8888:8888 -v ./data:~/data espressomd
 ```
 
-Now, just need to run inside your container the command
-
-```bash
-jupyter-notebook --no-browser --port 8888
-```
+Fine. Now, it's working!
 
 ## Using espressomd
 
